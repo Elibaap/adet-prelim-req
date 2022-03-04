@@ -1,0 +1,49 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333;
+  font-family: 'Lato', sans-serif;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  color: white;
+  box-shadow: 5px 5px 25px #000;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 2s;
+}
+.box .box__blurb {
+  opacity: 1;
+  transform: translateX(45px);
+  transition: opacity 0.5s 2s, transform 0.5s 0.5s;
+}
+.box .rect__blurb {
+  opacity: 0;
+  transform: translateX(500px);
+  transition: opacity 0.5s 1s, transform 0.5s 1s;
+}
+.box:hover {
+  width: 300px;
+  background-color: orange;
+  box-shadow: -5px 5px 25px #000;
+}
+.box:hover .box__blurb {
+  opacity: 0;
+  transform: translateX(-500px);
+}
+.box:hover .rect__blurb {
+  opacity: 10;
+  transform: translateX(-100px);
+}
