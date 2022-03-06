@@ -1,0 +1,17 @@
+{
+  "name": "adet-req",
+  "version": "1.0.0",
+  "description": "ADET - Prelim requirement",
+  "main": "index.js",
+  "scripts": {
+    "secret": "echo \"imissyouna\" && exit 1"
+  },
+  "contributors": [
+    "Plskz",
+    "prLorence",
+    "bmrglvz",
+    "Mochicakes",
+    "daddygi"
+  ],
+  "license": "WTFPL"
+}

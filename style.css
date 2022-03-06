@@ -1,83 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat:700,400);
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-*, *::before, *::after {
-  margin: 0;
+*,
+*::before,
+*::after {
   padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
-a {
-  text-decoration: none;
-  color: black;
+/* helper */
+.hide {
+  display: none;
 }
 
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.show {
+  display: block;
+}
+
+/* --- */
+
+header {
+  text-align: center;
+}
+
+main {
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #FFE8A3;
-  font-family: 'Montserrat', sans-serif;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 35px;
+}
+.container {
+  width: 450px;
+  height: 365px;
+  background-color: #a59494;
 }
 
-html, body {
-  height: 100%;
+footer {
+  text-align: center;
+  height: 200px;
 }
 
+/* --- walanakamibro --- */
 button {
   border: 5px solid transparent;
-  background: #AED6D1;
-  color: #55706D;
+  background: #aed6d1;
+  color: #55706d;
   border-radius: 40px;
   padding: 15px;
   overflow: hidden;
-  width: 200px;
-  -webkit-transition: all        1.2s, border     0.5s 1.2s, -webkit-box-shadow 0.3s 1.5s;
-  transition: all        1.2s, border     0.5s 1.2s, -webkit-box-shadow 0.3s 1.5s;
-  transition: all        1.2s, border     0.5s 1.2s, box-shadow 0.3s 1.5s;
-  transition: all        1.2s, border     0.5s 1.2s, box-shadow 0.3s 1.5s, -webkit-box-shadow 0.3s 1.5s;
+  width: 50px;
+  -webkit-transition: all 1.2s, border 0.5s 1.2s, -webkit-box-shadow 0.3s 1.5s;
+  transition: all 1.2s, border 0.5s 1.2s, -webkit-box-shadow 0.3s 1.5s;
+  transition: all 1.2s, border 0.5s 1.2s, box-shadow 0.3s 1.5s;
+  transition: all 1.2s, border 0.5s 1.2s, box-shadow 0.3s 1.5s,
+    -webkit-box-shadow 0.3s 1.5s;
   white-space: nowrap;
-  font-weight: bold;
 }
+
 button span {
   display: inline-block;
   -webkit-transform: translateX(300px);
-          transform: translateX(300px);
+  transform: translateX(300px);
   font-weight: normal;
   opacity: 0;
   -webkit-transition: opacity 0.1s 0.5s, -webkit-transform 0.4s 0.5s;
   transition: opacity 0.1s 0.5s, -webkit-transform 0.4s 0.5s;
   transition: opacity 0.1s 0.5s, transform 0.4s 0.5s;
-  transition: opacity 0.1s 0.5s, transform 0.4s 0.5s, -webkit-transform 0.4s 0.5s;
+  transition: opacity 0.1s 0.5s, transform 0.4s 0.5s,
+    -webkit-transform 0.4s 0.5s;
 }
+
 button:hover {
-  text-indent: 0;
-  background: #55706D;
-  color: #FFE8A3;
-  width: 250px;
-  border: 10px solid #8DCCC4;
+  background: #55706d;
+  color: #ffe8a3;
+  width: 170px;
+  border: 10px solid #8dccc4;
   -webkit-box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.15);
-          box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
+
 button:hover span {
   -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
+  font-weight: bold;
   opacity: 1;
 }
 
-.button-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2em;
-  justify-content: center;
+/* --- Animation 1 --- */
+.animation1 {
+  /* changed the default size from 100px to 75px */
+  width: 75px;
+  height: 75px;
+  background-color: thistle;
+  position: relative;
+  -webkit-animation: epilepsy;
+  animation: epilepsy 2s infinite;
+}
+
+@keyframes epilepsy {
+  0% {
+    background-color: purple;
+    left: 0px;
+    top: 0px;
+  }
+
+  16% {
+    background-color: paleturquoise;
+    left: 374px;
+    top: 0px;
+  }
+
+  25% {
+    background-color: plum;
+    left: 0px;
+    top: 0px;
+  }
+
+  43% {
+    background-color: plum;
+    left: 374px;
+    top: 0px;
+  }
+
+  50% {
+    background-color: peru;
+    left: 374px;
+    top: 285px;
+  }
+
+  63% {
+    background-color: slategray;
+    left: 374px;
+    top: 0px;
+  }
+
+  75% {
+    background-color: palevioletred;
+    left: 0px;
+    top: 285px;
+  }
+
+  100% {
+    background-color: thistle;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+/* --- Animation 2 --- */
+.animation2 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: pink;
+  position: relative;
+  animation: epilepsy2 8s linear infinite;
+}
+
+@keyframes epilepsy2 {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+
+  25% {
+    background-color: yellow;
+    left: 393px;
+    top: 0px;
+  }
+
+  45% {
+    background-color: black;
+    left: 0px;
+    top: 310px;
+  }
+
+  50% {
+    background-color: blue;
+    left: 393px;
+    top: 200px;
+  }
+
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+/* --- Animation 3 --- */
+.animation3 {
+  height: 60px;
+  width: 45px;
+  margin: 0 auto;
+  margin-top: 140px;
+  background-color: red;
+  animation-name: banat-epilepsy;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes banat-epilepsy {
+  0% {
+    transform: scale(0.3);
+    background-color: red;
+    border-radius: 100%;
+  }
+  50% {
+    transform: scale(1);
+    width: 75%;
+    height: 30%;
+  }
+  100% {
+    transform: scale(1.5);
+    background-color: yellow;
+  }
+}
+
+/* --- Animation 4 --- */
+.animation4 {
+  /* changed the div size from 400px to 300px */
+  height: 160px;
+  width: 225px;
+  background-color: fuchsia;
+  animation: imissyou 3s ease infinite alternate,
+    imissyounarin 5s linear infinite alternate;
+}
+
+@keyframes imissyou {
+  0%,
+  100% {
+    background-color: black;
+  }
+  50% {
+    background-color: orange;
+  }
+}
+
+@keyframes imissyounarin {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(100%, 0);
+  }
+
+  80% {
+    transform: translate(70%, 0);
+  }
+}
+
+/* --- Animation 5 --- */
+.animation5 {
+  justify-content: space-between;
   align-items: center;
+  width: 150px;
+  height: 150px;
+  background: rgb(44, 41, 22);
+  background: linear-gradient(
+    180deg,
+    rgba(44, 41, 22, 1) 0%,
+    rgba(150, 140, 131, 1) 100%
+  );
+  color: white;
+  box-shadow: 5px 5px 13px rgba(104, 103, 103, 0.356);
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 2s;
+}
+
+.animation5 .click-me {
+  opacity: 1;
+  transform: translateX(45px);
+  transition: opacity 0.5s 2s, transform 0.5s 0.5s;
+}
+
+.animation5 .rect__blurb {
+  opacity: 0;
+  transform: translateX(500px);
+  transition: opacity 0.5s 1s, transform 0.5s 1s;
+}
+
+.animation5:hover {
+  width: 450px;
+  height: 365px;
+  background-color: white;
+  box-shadow: 5px 5px 15px rgba(104, 103, 103, 0.507);
+
+  background-image: url(./img/cattou.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  border-radius: 45px;
+}
+
+.animation5:hover .click-me {
+  opacity: 0;
+  transform: translateX(-500px);
+}
+
+.animation5:hover .rect__blurb {
+  opacity: 10;
+  transform: translateX(-100px);
 }
