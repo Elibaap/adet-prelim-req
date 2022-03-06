@@ -4,50 +4,46 @@
     <head>
         <style>
             div {
-                width: 100px;
-                height: 100px;
-                background-color: red;
+                /* changed the default size from 100px to 75px */
+                width: 75px;
+                height: 75px;
+                background-color: thistle;
                 position: relative;
-                -webkit-animation-name: example;
+                -webkit-animation: epilepsy;
                 /* Safari 4.0 - 8.0 */
-                -webkit-animation-duration: 4s;
-                /* Safari 4.0 - 8.0 */
-                -webkit-animation-delay: 2s;
-                /* Safari 4.0 - 8.0 */
-                animation-name: example;
-                animation-duration: 4s;
-                animation-delay: -2s;
+                /* extended animation duration from 4s to 8s */
+                animation: epilepsy 2s infinite;
             }
 
 
             /* Standard syntax */
-            @keyframes example {
+            @keyframes epilepsy {
                 0% {
-                    background-color: red;
+                    background-color: purple;
                     left: 0px;
                     top: 0px;
                 }
 
                 25% {
-                    background-color: yellow;
+                    background-color: paleturquoise;
                     left: 200px;
                     top: 0px;
                 }
 
                 50% {
-                    background-color: blue;
+                    background-color: peru;
                     left: 200px;
                     top: 200px;
                 }
 
                 75% {
-                    background-color: green;
+                    background-color: palevioletred;
                     left: 0px;
                     top: 200px;
                 }
 
                 100% {
-                    background-color: red;
+                    background-color: thistle;
                     left: 0px;
                     top: 0px;
                 }

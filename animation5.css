@@ -24,7 +24,7 @@ body {
   cursor: pointer;
   transition: all 2s;
 }
-.box .box__blurb {
+.box .click-me {
   opacity: 1;
   transform: translateX(45px);
   transition: opacity 0.5s 2s, transform 0.5s 0.5s;
@@ -36,10 +36,14 @@ body {
 }
 .box:hover {
   width: 300px;
-  background-color: orange;
+  height: 200px;
+  background-color: white;
   box-shadow: -5px 5px 25px #000;
+  background-image: url(./images/ahegao.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.box:hover .box__blurb {
+.box:hover .click-me {
   opacity: 0;
   transform: translateX(-500px);
 }
