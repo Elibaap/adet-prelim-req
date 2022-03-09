@@ -268,8 +268,7 @@ button:hover span {
 
 /* --- Animation 5 --- */
 .animation5 {
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
   width: 150px;
   height: 150px;
   background: rgb(44, 41, 22);
