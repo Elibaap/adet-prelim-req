@@ -89,7 +89,7 @@ button:hover span {
 }
 
 /* --- Animation 1 --- */
-.animation1 {
+#animation1 {
   /* changed the default size from 100px to 75px */
   width: 75px;
   height: 75px;
@@ -150,7 +150,7 @@ button:hover span {
 }
 
 /* --- Animation 2 --- */
-.animation2 {
+#animation2 {
   width: 60px;
   height: 60px;
   border-radius: 50px;
@@ -198,7 +198,7 @@ button:hover span {
 }
 
 /* --- Animation 3 --- */
-.animation3 {
+#animation3 {
   height: 60px;
   width: 45px;
   margin: 0 auto;
@@ -232,7 +232,7 @@ button:hover span {
 }
 
 /* --- Animation 4 --- */
-.animation4 {
+#animation4 {
   /* changed the div size from 400px to 300px */
   height: 160px;
   width: 225px;
@@ -267,7 +267,7 @@ button:hover span {
 }
 
 /* --- Animation 5 --- */
-.animation5 {
+#animation5 {
   text-align: center;
   width: 150px;
   height: 150px;
@@ -285,37 +285,37 @@ button:hover span {
   transition: all 2s;
 }
 
-.animation5 .click-me {
+#animation5 .click-me {
   opacity: 1;
   transform: translateX(45px);
   transition: opacity 0.5s 2s, transform 0.5s 0.5s;
 }
 
-.animation5 .rect__blurb {
+#animation5 .rect__blurb {
   opacity: 0;
   transform: translateX(500px);
   transition: opacity 0.5s 1s, transform 0.5s 1s;
 }
 
-.animation5:hover {
+#animation5:hover {
   width: 450px;
   height: 365px;
   background-color: white;
   box-shadow: 5px 5px 15px rgba(104, 103, 103, 0.507);
 
-  background-image: url(./img/cattou.png);
+  background-image: url(./img/pekpek.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
   border-radius: 45px;
 }
 
-.animation5:hover .click-me {
+#animation5:hover .click-me {
   opacity: 0;
   transform: translateX(-500px);
 }
 
-.animation5:hover .rect__blurb {
+#animation5:hover .rect__blurb {
   opacity: 10;
   transform: translateX(-100px);
 }
